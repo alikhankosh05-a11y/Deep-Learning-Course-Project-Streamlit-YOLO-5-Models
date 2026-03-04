@@ -54,3 +54,50 @@ Trained 5 CNN architectures using transfer learning:
 ### Example Recognition
 <img width="1187" height="394" alt="Screenshot 2026-03-04 at 07 40 35" src="https://github.com/user-attachments/assets/930035bd-689d-4dda-b081-65a086eeb5f8" />
 
+## Stages of the project
+
+1. Data Parsing  
+At this stage, a custom dataset of 253 images across 15 product categories (stationery and electronics) was collected and organized. Images were manually gathered and sorted into separate folders for each class.
+
+2. Raw Data Processing  
+The dataset was split into training (214 images) and validation (39 images) sets. Folder structure was prepared according to PyTorch ImageFolder requirements. Class names were standardized for consistent labeling.
+
+3. Handling Missing Values and Feature Engineering  
+No missing values were present in the image dataset. Data augmentation techniques were applied to the training set to increase diversity and prevent overfitting:  
+- RandomResizedCrop(224)  
+- RandomHorizontalFlip()  
+Validation set used only deterministic transformations (Resize + CenterCrop).
+
+4. Exploratory analysis  
+Class distribution was analyzed (balanced dataset with 15 classes). Sample images from each category were reviewed. Data loaders and batch sizes were tested for optimal training performance.
+
+5. Encoding and data preparation for training  
+Images were transformed into tensors and normalized using ImageNet statistics. PyTorch DataLoaders were created with a batch size of 8. All categorical labels were automatically encoded using `datasets.ImageFolder`.
+
+6. Feature and Model Selection  
+Five different CNN architectures were trained using transfer learning with pre-trained ImageNet weights:  
+- AlexNet  
+- VGG16  
+- GoogLeNet (Inception)  
+- ResNet50  
+- EfficientNet-B0  
+
+Hyperparameters were tuned (learning rate 0.001, SGD optimizer with momentum, StepLR scheduler, 8 epochs). Models were evaluated on the test set using accuracy, precision, recall, and F1-score. The best-performing model (ResNet50) was selected.
+
+7. Model deployment  
+- All five trained models were saved as `.pth` files.  
+- A user-friendly web application was developed using Streamlit.  
+- YOLOv8n was integrated for multi-product object detection in a single image.  
+- A price database (JSON mapping) was implemented to calculate individual and total costs in real time.  
+- The application supports image upload, product recognition, and automatic price summation.
+
+## Conclusion
+The best metrics were demonstrated by **ResNet50**, which achieved **100% test accuracy**, 1.0000 precision, 1.0000 recall, and 1.0000 F1-score.  
+
+Interestingly, the default hyperparameters performed excellently, and ResNet50 outperformed other models despite moderate model size (90.09 MB).  
+
+The baseline models showed 85–95% accuracy, whereas the selected ResNet50 model reached 100% accuracy — an improvement that makes the system highly reliable for real-world use.  
+
+For sure, next time I will use a stronger dataset, since according to my data, I can say that there is a small amount of luck cause few photos match exactly, some do not
+
+The final Streamlit web application successfully performs multi-product recognition and price estimation, fully meeting all project requirements.
