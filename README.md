@@ -22,8 +22,10 @@ This project implements a system that recognizes multiple products from a single
 - **Preprocessing:** Data augmentation, resize 224×224, normalization
 
 **Dataset examples:**
+<img width="177" height="115" alt="Screenshot 2026-03-04 at 07 48 37" src="https://github.com/user-attachments/assets/eb70c720-3a82-462e-a511-cfb2102c52f6" />
 
-![Dataset samples](screenshots/dataset_examples.png)
+<img width="668" height="513" alt="Screenshot 2026-03-04 at 07 49 00" src="https://github.com/user-attachments/assets/f14f1d75-38ea-446e-9808-b0131fe0be64" />
+
 
 ## Models Implemented
 Trained 5 CNN architectures using transfer learning:
