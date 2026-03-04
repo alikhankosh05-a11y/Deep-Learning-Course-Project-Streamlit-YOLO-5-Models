@@ -36,20 +36,19 @@ Trained 5 CNN architectures using transfer learning:
 | **ResNet50**     | **100%**      | **1.0000**| **1.0000**| **1.0000**| 90.09     |
 | EfficientNet-B0  | 86.67%        | 0.8558    | 0.8667  | 0.8458   | 15.64     |
 
+
 **Best model:** ResNet50
 
 ## Web Application Demo
 **Live demo:** `streamlit run streamlit_dl.py`
 
 ### Main Interface
-![Main Interface](/Users/allikhankoshamet/Desktop/dl_project/dl_new_dataset/Screenshot 2026-03-04 at 07.38.39.png)
+<img width="1560" height="708" alt="Screenshot 2026-03-04 at 07 38 39" src="https://github.com/user-attachments/assets/3a6cae91-ef78-45af-80aa-2f0c46031eea" />
 
 ### Model Comparison Tab
-![Model Comparison](/Users/allikhankoshamet/Desktop/dl_project/dl_new_dataset/Screenshot 2026-03-04 at 07.39.10.png)
+<img width="1518" height="642" alt="Screenshot 2026-03-04 at 07 39 10" src="https://github.com/user-attachments/assets/c81f6444-f6a9-4a6c-b225-dbbd06ad021c" />
+
 
 ### Example Recognition
-![Recognition Example](/Users/allikhankoshamet/Desktop/dl_project/dl_new_dataset/Screenshot 2026-03-04 at 07.40.35.png)
+<img width="1187" height="394" alt="Screenshot 2026-03-04 at 07 40 35" src="https://github.com/user-attachments/assets/930035bd-689d-4dda-b081-65a086eeb5f8" />
 
-**Total cost calculation shown in real time.**
-
-## How to Run the Application
