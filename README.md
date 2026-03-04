@@ -42,18 +42,14 @@ Trained 5 CNN architectures using transfer learning:
 **Live demo:** `streamlit run streamlit_dl.py`
 
 ### Main Interface
-![Main Interface](screenshots/main_interface.png)
+![Main Interface](/Users/allikhankoshamet/Desktop/dl_project/dl_new_dataset/Screenshot 2026-03-04 at 07.38.39.png)
 
 ### Model Comparison Tab
-![Model Comparison](screenshots/model_comparison.png)
+![Model Comparison](/Users/allikhankoshamet/Desktop/dl_project/dl_new_dataset/Screenshot 2026-03-04 at 07.39.10.png)
 
 ### Example Recognition
-![Recognition Example](screenshots/recognition_example.png)
+![Recognition Example](/Users/allikhankoshamet/Desktop/dl_project/dl_new_dataset/Screenshot 2026-03-04 at 07.40.35.png)
 
 **Total cost calculation shown in real time.**
 
 ## How to Run the Application
-
-1. Open terminal and go to project folder:
-   ```bash
-   cd /Users/allikhankoshamet/Desktop/dl_project/dl_new_dataset
