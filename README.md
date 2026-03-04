@@ -18,6 +18,8 @@ This project implements a system that recognizes multiple products from a single
 - **Domain:** Stationery and electronics (office supplies)
 - **Number of classes:** 15
 - **Images:** 253 (train: 214, val: 39)
+  <img width="390" height="238" alt="Screenshot 2026-03-04 at 07 59 32" src="https://github.com/user-attachments/assets/fb582b17-bb7f-41c4-b7cb-24eb6df9a95b" />
+
 - **Source:** Custom collected dataset
 - **Preprocessing:** Data augmentation, resize 224×224, normalization
 
